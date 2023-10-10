@@ -1,4 +1,4 @@
-console.log(`================================09_objectCloneAssig==============================================`);
+console.log(`================================09_objectCloneAssign==============================================`);
 
 console.log(`----------------------------------step 1--------------------------------------------------`);
 
@@ -18,7 +18,7 @@ console.log(`-----------------------------------step 2--------------------------
 console.log(`create the object - 'bankLocation'`);
 
 const bankLocation = {
-     street : "Pune solapur road",
+     street : "Pune Solapur road",
      city : "pune",
      pinCode : 411028
 }
@@ -28,25 +28,25 @@ console.log(`---------------------------------step 3----------------------------
 
 console.log(`clone bankSbi and bankLocation objects`);
 
-const cloneBankSbiorLocation = Object.assign(bankSbi,bankLocation);
-console.table(cloneBankSbiorLocation);
+const cloneBankSbiOrLocation = Object.assign(bankSbi,bankLocation);
+console.table(cloneBankSbiOrLocation);
 
 console.log(`------------------------------step 4-------------------------------------------------------`);
 
-console.log(`create object rateofIntrest`);
+console.log(`create object rateOfInterest`);
 
-const rateOfIntrest = {
-    homeLoanIntrest : '15%',
-    personalLoanIntrest :'12%' ,
-    dueIntrest : '16%'
+const rateOfInterest = {
+    homeLoanInterest : '15%',
+    personalLoanInterest :'12%' ,
+    dueInterest : '16%'
 }
-console.log(rateOfIntrest);
+console.log(rateOfInterest);
 
 console.log(`------------------------------step 5------------------------------------------------------`);
 
-console.log(`merged object bankSbi,bankLocation,rateOfIntrest into new object sbiDetails`);
+console.log(`merged object bankSbi,bankLocation,rateOfInterest into new object sbiDetails`);
 
-let sbiDetails = Object.assign({},bankSbi,bankLocation,rateOfIntrest)
+let sbiDetails = Object.assign({},bankSbi,bankLocation,rateOfInterest)
 console.table(sbiDetails);
 
 console.log(`----------------------------step 6----------------------------------------------------------`);
