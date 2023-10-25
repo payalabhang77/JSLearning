@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise time!</title>
+    <style>
+         h1{
+            text-decoration: underline;
+            color: indigo;
+         }
+         p{
+            color: brown;
+         }
+         body{
+            background-color: aquamarine;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="overview">
+             <h1>HTML and JavaScript are crucial technologies</h1>
+             <p>The Web would not work without them....</p>
+        </div>
+        <div id="advantages">
+            <ul>
+                <li>Flexible</li>
+                <li>Available</li>
+                <li>Magical</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        
+       const mainHeading = document.querySelector('h1');
+       console.log(mainHeading.innerHTML);
+
+       const secondAdvantages = document.querySelectorAll('li')
+       console.log(secondAdvantages[1].innerHTML);
+
+       const advDiv = document.querySelector('#advantages');
+       console.log(advDiv.innerHTML);
+    
+    </script>
+</body>
+</html>
